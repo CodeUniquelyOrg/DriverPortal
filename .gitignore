@@ -1,0 +1,13 @@
+.DS_Store
+npm-debug.log
+dump.rdb
+.idea/
+.tmp/
+.nyc_output/
+.svn/
+node_modules/
+coverage/
+public/*
+dist/*
+build/*
+__JUNK/*

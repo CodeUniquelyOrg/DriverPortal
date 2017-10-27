@@ -1,0 +1,21 @@
+.root {
+  // composes: plate from 'style/typography.pcss';
+  width:180px;
+  padding: 6px 0;
+  border: 4px solid black;
+  border-radius: 6px;
+  text-shadow: 0 -1px 1px white;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+}
+.yellow {
+  composes: root;
+  background-color: #FCE300;
+}
+.white {
+  composes: root;
+  background-color: #FFFFFF;
+}

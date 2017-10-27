@@ -1,0 +1,32 @@
+{
+  "fromDate":"2017-02-26T17:52:56.417",
+  "location":"Leighton Buzzard",
+  "identifiedAs":"TZ1320",
+  "tyres":[
+    {
+      "pressure":193.52084350585938,
+      "depth":7.599999904632568,
+      "good":true,
+      "id":11
+    },
+    {
+      "pressure":195.02821350097656,
+      "depth":5.5,
+      "good":true,
+      "id":12
+    },
+    {
+      "pressure":200.82359313964844,
+      "depth":8.100000381469727,
+      "good":true,
+      "id":21
+    },
+    {
+      "pressure":186.8001251220703,
+      "depth":6.5,
+      "good":true,
+      "id":22
+    }
+  ],
+  "vehicleId":1699
+}

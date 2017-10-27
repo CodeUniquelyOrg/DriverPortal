@@ -1,0 +1,27 @@
+/* Global CSS file */
+:root {
+  --red: #ff0000;
+  --orange: orange;
+  --green: #aaf200;
+  --blue: #1587D7;
+
+  --placeholder-color: #aaa;
+  --placeholder-weight: 300;
+
+  --button-color: #1587D7;
+  --button-text: #fff;
+
+  --radio-square: 36px;
+  --radio-size: 32px;
+  --radio-check-text: #fff;
+  --check_focus: #ccc;
+  --radio-hover: #ff0000;
+
+  --plate-yellow: #FCE300;
+
+  --dark-text: #313131;
+  --body-text: #515151;
+  --light-text: #999;
+  --text: #515151;
+  --tooltip-color: #515151;
+}

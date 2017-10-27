@@ -1,0 +1,138 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding: 24px;
+}
+.table {
+  flex-direction: row;
+  width: 100%;
+}
+.header {
+  /* background-color: #1587D7; */
+  font-weight: bold;
+  flex-direction: row;
+  display: flex;
+}
+/* .header div {
+  flex: 1 0 0%;
+  text-align: center;
+  border: 1px solid #303F9F;
+  padding: 12px;
+  color:  white;
+}
+ */
+.infoline {
+  flex-direction: row;
+  display: flex;
+}
+.infoline div {
+  text-align: center;
+  padding: 12px 0;
+  color:  black;
+}
+.subheader {
+  flex: 1 0 0%;
+  color: #535353;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+}
+.subheader > span:first-of-type {
+  font-size: 24px;
+}
+.subheader > span:nth-of-type(2) {
+  margin-left: 12px;
+  font-size: 24px;
+}
+.subheader > span.at {
+  margin-left: 12px;
+  color: #999;
+}
+.subheader > span:last-of-type {
+  margin-left: 12px;
+  color: #999;
+}
+.plate {
+  flex-direction: row;
+  justify-content: center
+}
+.historyLink {
+  /* */
+}
+.historyLink a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #999;
+  line-height: 56px;
+  flex-direction: column;
+}
+.axlelabel {
+  background-color: #1587D7;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  font-weight: bold;
+  padding: 12px;
+}
+.side {
+  flex-direction: row;
+  display: flex;
+}
+.side div {
+  flex: 1 0 0%;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  font-weight: bold;
+}
+.axels {
+  flex-direction: column;
+}
+.axel {
+  flex-direction: row;
+  display: flex;
+}
+.halfaxle {
+  flex: 1 0 0%;
+  flex-direction: row;
+  display: flex;
+}
+.tyre {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+}
+.tyre div {
+  flex: 1 0 0%;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px;
+}
+.measureaxle {
+  flex: 1 0 0%;
+  flex-direction: column;
+  display: flex;
+}
+.measure {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.depth {
+  line-height: 24px;
+  vertical-align: middle;
+  color: black;
+}
+.pressure {
+  line-height: 24px;
+  vertical-align: middle;
+  color: black;
+}
+.deviation {
+  padding-right: 6px;
+  color: red;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+}

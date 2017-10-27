@@ -1,0 +1,39 @@
+{
+  "presets": ["react", "es2015", "stage-0"],
+  "plugins": ["react-hot-loader/babel"],
+  "env": {
+    "production": {
+      "presets": ["es2015", "react", "react-optimize", "es2015-native-modules", "stage-0"]
+      // "presets": ["es2015", { "modules": false }, "react", "react-optimize", "stage-0"]
+    },
+    "test": {
+      "presets": ["es2015", "react", "stage-0"]
+    }
+  },
+  "plugins": [
+
+    ["module-resolver", {
+        "root":[ "." ],
+        "alias": {
+          "assets":      "./assets",
+          "mock":        "./mock",
+          "server":      "./server",
+          "controllers": "./server/controllers",
+          "lib":         "./server/lib",
+          "models":      "./server/models",
+          "routes":      "./server/routes",
+          "i18n":        "./i18n",
+          "client":      "./client",
+          "actions":     "./client/actions",
+          "components":  "./client/components",
+          "constants":   "./client/constants",
+          "containers":  "./client/containers",
+          "reducers":    "./client/reducers",
+          "services":    "./client/services",
+          "store":       "./client/store",
+          "style":       "./client/style",
+      },
+    }],
+
+  ],
+}

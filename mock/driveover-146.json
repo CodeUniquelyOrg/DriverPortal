@@ -1,0 +1,32 @@
+{
+  "fromDate":"2017-02-13T07:48:48.407",
+  "location":"Tring",
+  "identifiedAs":"WR0268",
+  "tyres":[
+    {
+      "pressure":222.35870361328125,
+      "depth":4.599999904632568,
+      "good":true,
+      "id":11
+    },
+    {
+      "pressure":221.99630737304688,
+      "depth":5,
+      "good":true,
+      "id":12
+    },
+    {
+      "pressure":222.3232879638672,
+      "depth":3.9000000953674316,
+      "good":true,
+      "id":21
+    },
+    {
+      "pressure":222.58164978027344,
+      "depth":4.099999904632568,
+      "good":true,
+      "id":22
+    }
+  ],
+  "vehicleId":1583
+}

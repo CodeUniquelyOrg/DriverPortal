@@ -1,0 +1,70 @@
+.root {
+  margin: 4px 0;
+}
+
+.input, .label {
+  display: inline;
+  display: inline-block;
+  cursor: pointer;
+  height: var(--radio-square);
+}
+
+.input {
+  position: absolute;
+  left: -9999px;
+  width:1px;
+  opacity: 0;
+  transition: all .2s;
+}
+.label {
+  /* @include __radioFont(); */
+  position: relative;
+  color: var(--body-text);
+  line-height: var(--radio-square);
+  vertical-align: middle;
+  height: var(--radio-square);
+  padding: 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid var(--blue);
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--radio-size);
+  height: var(--radio-size);
+  line-height: var(--radio-size);
+  margin-bottom: 4px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+.input:checked + .label:before {
+  border-color: var(--blue);
+  box-shadow: inset 0px 0px 0px 8px var(--blue);
+  background: #fff;
+  color:var(--radio-check-text);
+}
+
+/* radio-button accessibility */
+.input:focus ~ .label {
+  outline: 1px dotted var(--check_focus);
+}
+
+.input:focus ~ .label:before {
+  border-color: var(--check_focus);
+  box-shadow: inset 0px 0px 0px 8px #fff;
+  background: var(--blue);
+  color: var(--blue);
+}
+.input:checked:focus ~ .label:before {
+  box-shadow: inset 0px 0px 0px 8px var(--blue);
+  background: var(--radio-check-text);
+  color:var(--radio-check-text);
+}
+.input ~ .label:hover:before {
+  border: 2px solid var(--radio-hover) !important;
+}

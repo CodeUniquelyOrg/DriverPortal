@@ -1,0 +1,168 @@
+{
+  "users":[
+    {
+      "email": "alex.codd@wheelright.co.uk",
+      "password": "password",
+      "roles": [ "driver" ],
+      "preferences": {
+        "language": "de-DE",
+        "presureUnits": "bar",
+        "depthUnits": "mm",
+        "showUnits": true,
+        "contactBySMS": true,
+        "contactByEmail": true,
+        "contactInApp": false
+      },
+      "registrations": [
+        {
+          "vehicleId": 123,
+          "plate": "HD LS 704",
+          "normalizedPlate": "HDLS704",
+          "ideal": [
+            {
+              "id": "11",
+              "pressure": 234.422
+            },
+            {
+              "id": "12",
+              "pressure": 234.422
+            },
+            {
+              "id": "21",
+              "pressure": 234.422
+            },
+            {
+              "id": "22",
+              "pressure": 234.422
+            }
+          ]
+        },
+        {
+          "vehicleId": 124,
+          "plate": "KA X 1138",
+          "normalizedPlate": "KAX1138"
+        },
+        {
+          "vehicleId": 125,
+          "plate": "BD SC 2055",
+          "normalizedPlate": "BDSC2055"
+        }
+      ],
+      "personal": {
+        "greeting": "Dear Sir,",
+        "name": {
+          "title": "Mr",
+          "foreName": "Alex",
+          "lastName": "Codd"
+        },
+        "contactBy": {
+          "email":"alex.codd@wheelright.co.uk"
+        }
+      },
+      "other": {
+        "termsAccepted": false
+      }
+    },
+
+    {
+      "email": "steves@codeuniquely.co.uk",
+      "password": "password",
+      "roles": [ "driver", "manager", "admin" ],
+      "preferences": {
+        "language": "en-GB",
+        "presureUnits": "psi",
+        "depthUnits": "mm",
+        "showUnits": false,
+        "contactBySMS": false,
+        "contactByEmail": false,
+        "contactInApp": true,
+        "showTutorial": false,
+        "themeToUse": "light"
+      },
+      "registrations": [
+        {
+          "vehicleId": 90,
+          "plate": "L5 MNE",
+          "normalizedPlate": "L5MNE",
+          "fromDate":"2017-08-01T08:06:22.880",
+          "ideal": [
+            {
+              "id": "11",
+              "pressure": 234.422
+            },
+            {
+              "id": "12",
+              "pressure": 234.422
+            },
+            {
+              "id": "21",
+              "pressure": 234.422
+            },
+            {
+              "id": "22",
+              "pressure": 234.422
+            }
+          ]
+        },
+        {
+          "vehicleId": 91,
+          "plate": "L5 CDU",
+          "normalizedPlate": "L5CDU",
+          "fromDate":"2017-08-03T08:06:22.880",
+          "ideal": [
+            {
+              "id": "11",
+              "pressure": 234.422
+            },
+            {
+              "id": "12",
+              "pressure": 234.422
+            },
+            {
+              "id": "21",
+              "pressure": 248.211
+            },
+            {
+              "id": "22",
+              "pressure": 248.211
+            }
+          ]
+        }
+      ],
+
+      "personal": {
+        "greeting": "Hi Steve,",
+        "avatar": "https://s.gravatar.com/avatar/5658520ca57bc79b1e14823e078d1d80?s=80",
+        "name": {
+          "foreName": "Steve",
+          "lastName": "Saxton"
+        }
+      },
+      "other": {
+        "termsAccepted": true,
+        "registeredUser": true
+      }
+    },
+
+    {
+      "email": "admin@codeuniquely.co.uk",
+      "password": "password",
+      "roles": [ "admin" ],
+      "disabled": true
+    },
+
+    {
+      "email": "manager@codeuniquely.co.uk",
+      "password": "password",
+      "roles": [ "manager" ],
+      "disabled": true
+    },
+
+    {
+      "email": "driver@codeuniquely.co.uk",
+      "password": "password",
+      "roles": [ "driver" ],
+      "disabled": true
+    }
+  ]
+}

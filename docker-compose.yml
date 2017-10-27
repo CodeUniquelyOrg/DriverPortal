@@ -1,0 +1,36 @@
+# driver portal docker-compose.yml file
+version: "2"
+services:
+  web:
+    # replace with an image that is stored (in docker)
+    # image: username/repository:tag
+    build: .
+    volumes:
+      - /usr/app
+    # links:
+    #   - db
+    ports:
+      # express js port - defined n config => port 80 will work here
+      - "80:80"
+      # nodemon debug port -so we can attach VSCode and debug
+      - "5858:5858"
+      # ssh port
+      - "2022:22"
+    environment:
+      NODE_ENV: production
+      # mongodb://localhost:27017/mern-starter
+      MONGO_URL: mongodb://db:27017/portal
+      PORT: 80
+      WEBAPI_HOST: 'http://driverportalwebapitest.azurewebsites.net'
+      WEBAPI_PORT: 80
+  # db:
+  #   image: mongo
+  #   ports:
+  #     - "27017:27017"
+  #   volumes_from:
+  #     - mongodata
+  # mongodata:
+  #   image: tianon/true
+  #   volumes:
+  #     'Data container for Mongo Stuff'
+  #     - /data/db

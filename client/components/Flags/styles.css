@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  flex-direction: row;
+}
+
+.root > div {
+  flex: 1 0 %;
+}

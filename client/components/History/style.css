@@ -1,0 +1,143 @@
+.root {
+  width:100%;
+  padding: 24px;
+}
+
+/* plate styling region */
+.plate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.plate > div:first-of-type {
+  width: 200px;
+}
+.plate > div:not(:first-of-type) {
+  margin-left: 24px;
+  flex: 1 0 0%;
+}
+.shareCode {
+  line-height: 50px;
+  font-size: 24px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.label {
+  color: #999;
+}
+.code {
+  /* nothing for now */
+}
+
+/* table syling region */
+.table {
+  flex-direction: row;
+  width: 100%;
+}
+.header {
+  /* background-color: #1587D7; */
+  font-weight: bold;
+  flex-direction: row;
+  display: flex;
+}
+.infoline {
+  flex-direction: row;
+  display: flex;
+}
+.infoline div {
+  text-align: center;
+  padding: 12px;
+  color:  black;
+}
+.subheader {
+  flex: 1 0 0%;
+  color: #535353;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+}
+.subheader > span:first-of-type {
+  font-size: 24px;
+}
+.subheader > span:nth-of-type(2) {
+  margin-left: 12px;
+  font-size: 24px;
+}
+.subheader > span.at {
+  margin-left: 12px;
+  color: #999;
+}
+.subheader > span:last-of-type {
+  margin-left: 12px;
+  color: #999;
+}
+.axlelabel {
+  background-color: #1587D7;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  font-weight: bold;
+  padding: 12px;
+}
+.side {
+  flex-direction: row;
+  display: flex;
+}
+.side div {
+  flex: 1 0 0%;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  font-weight: bold;
+}
+.axels {
+  flex-direction: column;
+}
+.axel {
+  flex-direction: row;
+  display: flex;
+}
+.halfaxle {
+  flex: 1 0 0%;
+  flex-direction: row;
+  display: flex;
+}
+.tyre {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+}
+.tyre div {
+  flex: 1 0 0%;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px;
+}
+.measureaxle {
+  flex: 1 0 0%;
+  flex-direction: column;
+  display: flex;
+}
+.measure {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.depth {
+  line-height: 24px;
+  vertical-align: middle;
+  color: black;
+}
+.pressure {
+  line-height: 24px;
+  vertical-align: middle;
+  color: black;
+}
+.deviation {
+  padding-right: 6px;
+  color: red;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+}

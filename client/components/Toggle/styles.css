@@ -1,0 +1,54 @@
+.toggle {
+  position: relative;
+  width: 80px;
+  height: 48px;
+  padding: 8px;
+}
+.switches {
+  width: 64px;
+  height: 32px;
+  border-radius: 32px;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.8);
+  background: white;
+  user-select: none;
+}
+.switches::after {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.switches .icon {
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 20px  !important;
+  transition: background 0.2s ease, box-shadow 0.5s ease;
+  user-select: none;
+}
+.off {
+  color: var(--light-text);
+  background: white;
+}
+.on {
+  color: white;
+  background: var(--blue);
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.1);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  padding: 4px;
+  border-radius: 12px;
+  background-color: var(--tooltip-color);
+  bottom: 50px;
+  box-shadow: 0 7px 12px -4px rgba(0,0,0,0.3);
+}
+.content {
+  display: block;
+  padding: 8px;
+  white-space: nowrap;
+  color: white;
+}

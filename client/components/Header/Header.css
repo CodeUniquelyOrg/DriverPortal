@@ -1,0 +1,89 @@
+.root {
+  background: #eee url('../../../assets/img/header-bk.png') center;
+  background-size: cover;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  height:48px;
+}
+.root > span:first-of-type {
+  /* display: inline-block; */
+  flex: 1 0 0%;
+}
+.root > span:last-of-type {
+  /* display: inline-block; */
+  /* flex: 3 0 0%; */
+}
+.hidden {
+  font-size: 8px;
+  opacity:  0;
+  color:  var(--blue);
+  width: 0;
+}
+.user {
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction:row;
+}
+.wrapper {
+  width:48px;
+  height:48px;
+  padding: 4px; bvkj
+  margin-right: 8px;
+}
+.icon {
+  cursor: pointer;
+  font-size:36px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+.icon:hover {
+  border-radius: 50%;
+  background: white;
+  color:  var(--blue);
+}
+.name {
+  /* flex: 1 0 0%; */
+  font-size: 16px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+@media (min-width: 480px) {
+  .name {
+    max-width: 380px;
+  }
+}
+@media (min-width: 640px) {
+  .name {
+    max-width: none;
+  }
+}
+
+.link {
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  text-align: right;
+  padding-right: 24px;
+  line-height: 48px;
+  vertical-align: middle;
+}
+.link span, .link a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+.link a:hover, .link span:hover {
+  cursor: pointer;
+  border-bottom-color: transparent;
+}

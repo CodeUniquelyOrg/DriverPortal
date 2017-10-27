@@ -1,0 +1,62 @@
+.wrapper {
+  position: relative;
+  width:48px;
+  height:48px;
+  padding: 4px;
+  margin-right: 8px;
+}
+.wrapper a  {
+}
+.wrapper .icon {
+  cursor: pointer;
+  font-size:36px !important;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  color: var(--blue);
+}
+.wrapper .hover {
+  cursor: pointer;
+  font-size:36px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(21, 135, 215, 0.7);
+  color: white;
+  transition: all 0.2s ease, color 0.2s ease;
+}
+.wrapper .iconDisabled {
+  cursor: default;
+  font-size:36px !important;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  color: var(--light-text);
+}
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  padding: 4px;
+  border-radius: 12px;
+  background-color: var(--tooltip-color);
+  bottom: 50px;
+  box-shadow: 0 7px 12px -4px rgba(0,0,0,0.3);
+}
+.content {
+  display: block;
+  padding: 8px;
+  white-space: nowrap;
+  color: white;
+}
+
+/* hidable icons on small screens */
+.hidden {
+  display: none;
+}
+@media (min-width: 640px) {
+  .hidden {
+    display: block;
+  }
+}

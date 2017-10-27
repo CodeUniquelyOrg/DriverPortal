@@ -1,0 +1,56 @@
+# pre-requirements
+# install these:
+# Webpack
+# python 2.7
+# mongoose
+# docker
+# jest
+
+
+
+
+# to remove any running instances
+docker-compose down
+
+# build the distribution contents
+npm run build
+
+
+
+#puts the image together
+docker-compose build
+
+#with the default username () and password from the keys tab in azure (it will be long and random)
+# u: driverwe
+# pw: oMehMD0M6DKMp8XOHme4G3svxkLgd=mR
+# docker login driverwe.azurecr.io
+docker login -u driverwe -p oMehMD0M6DKMp8XOHme4G3svxkLgd=mR driverwe.azurecr.io
+
+
+#link this image with the azure container
+docker tag driverportal_web driverwe.azurecr.io/driverportal_web
+
+# push the code up to azure
+docker push driverwe.azurecr.io/driverportal_web
+
+# start up powershell in azure while you wait...
+
+# default the group we are always talking about
+az configure --defaults group=testGroup
+
+#remove the old one
+az container delete --name driverportal
+
+#create the new one
+az container create --name driverportal --image driverwe.azurecr.io/driverportal_web --cpu 1 --memory 1.5 --ip-address Public --registry-username driverwe --registry-password oMehMD0M6DKMp8XOHme4G3svxkLgd=mR -e MONGO_URL="mongodb://driverportaldb:vl0x1RY6H8VHULZWL08Jtuy2rFEr2AKJp4YxHxjKj5NiMzGsLX5CS1s50U0Qt3a6DXJUeXopGltsJOI58Cdv7A==@driverportaldb.documents.azure.com:10255/?ssl=true" WEBAPI_HOST="http://driverportalwebapitest.azurewebsites.net" WEBAPI_PORT=80
+
+#look at the log
+az container logs --name driverportal
+
+# show the state of the container. Check this (all lines) if the container hasn't started running in 1 min
+az container show --name driverportal
+
+
+
+# to remove local images from docker
+#docker rmi -f 5c575209411e 8d6172e4d081 42e262dc0845 1298b2036003

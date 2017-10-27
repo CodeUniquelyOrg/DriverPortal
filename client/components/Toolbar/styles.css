@@ -1,0 +1,92 @@
+.root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.divider {
+  margin: 6px 6px 6px 12px;
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.wrapper {
+  width:48px;
+  height:48px;
+  padding: 4px;
+  margin-right: 8px;
+}
+.wrapper a  {
+
+}
+.icon {
+  cursor: pointer;
+  font-size:36px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  color: var(--blue);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  /* background: var(--blue); */
+  /* color: white; */
+}
+.icon:hover {
+  border-radius: 50%;
+  background:  rgba(21, 135, 215, 0.7); /* var(--light-text); */
+  color: white;
+}
+.iconDisabled {
+  cursor: pointer;
+  font-size:36px;
+  padding: 2px;
+  width: 40px;
+  height: 40px;
+  color: var(--light-text);
+}
+
+/*
+.button {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  margin-left: 8px;
+  background: white;
+  border:none;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.button > span {
+  width:  32px;
+  height: 32px;
+  font-size: 32px;
+  color: var(--blue);
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:hover > span {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+*/
+
+.root > a > span {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  margin-left: 8px;
+  background: white;
+  border:none;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.registered {
+  color:  var(--green);
+}
+.registered-failed {
+  color:  var(--orange);
+}
+.unregistered {
+  color:  var(--red);
+}

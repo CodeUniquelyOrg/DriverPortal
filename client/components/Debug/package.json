@@ -1,0 +1,19 @@
+{
+  "name": "react-debugger",
+  "version": "1.0.5",
+  "description": "A React wrapper for Debug NPM",
+  "main": "index.js",
+  "installable": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "debug",
+    "react"
+  ],
+  "author": "Steve Saxton <steves@codeuniquely.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.0.0"
+  }
+}
